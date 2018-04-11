@@ -1,0 +1,23 @@
+.v3-journal{
+	background-image:url(/course-files/course-v3-096-tsb-week2/exercise1/images/clipboard.svg);
+	background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	height:480px;
+	width:330px;
+	padding: 100px 30px 25px 40px;
+	margin:0 auto;
+}
+
+@media screen and (max-width:768px) {
+	.v3-journal{
+		height:390px;
+		width:275px;
+		padding: 78px 30px 25px 40px;
+	}
+}
+/*
+@media (max-width: 991px) {
+	.v3-journal{
+	}
+}*/

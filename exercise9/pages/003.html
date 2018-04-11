@@ -1,0 +1,29 @@
+<activity-box>
+    <page-title-center :title=pageTitle></page-title-center>
+    <p>Below are some qualities of the dynamic person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
+<p><strong>This is me:</strong></p>
+    <switch-form :data="flipswitchData"></switch-form>
+        <modal :content="modals[0]">
+          	<template slot="button">
+          		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+          		<fa-icon icon="fa-question-circle"></fa-icon>
+          	</template>
+          	<p>In the modern world of business you need to have your eyes open and your ears open, and have staff who do the same thing. The marketplace is changing rapidly and a dynamic leader will maximise that change in their way of operating and within the environment that they have created.</p>
+        </modal>
+        <modal :content="modals[1]">
+          	<template slot="button">
+          		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+          		<fa-icon icon="fa-question-circle"></fa-icon>
+          	</template>
+          	<p>A modern environment is a dynamic and engaging work space where people share ideas, have discussions in an open free thinking situation in a very positive and proactive way. </p>
+          	<p>It is a place where people want to come to work because they feel valued and are free to share ideas and have a say.</p>
+        </modal>
+        <modal :content="modals[2]">
+          	<template slot="button">
+          		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+          		<fa-icon icon="fa-question-circle"></fa-icon>
+          	</template>
+          	<p>A dynamic organisation will make sure that they will be identified by their brand. They will have a well thought-out logo; they will wear their brand with pride. Their people will look good, feel good and have a sense of belonging.</p>
+          	<p>They will also be easily identifiable through their service and their image.</p>
+        </modal>
+</activity-box>

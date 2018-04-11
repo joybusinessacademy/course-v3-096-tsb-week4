@@ -1,0 +1,27 @@
+<activity-box>
+    <page-title-center :title=pageTitle></page-title-center>
+    <p>Below are some qualities of the thinking person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
+<p><strong>This is me:</strong></p>
+    <switch-form :data="flipswitchData"></switch-form>
+    <modal :content="modals[0]">
+      	<template slot="button">
+      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+      		<fa-icon icon="fa-question-circle"></fa-icon>
+      	</template>
+      	<p>As a business owner myself I am always interested to learn more and more and more especially about my client needs and how I can enhance those for my clients.</p>
+    </modal>
+    <modal :content="modals[1]">
+      	<template slot="button">
+      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+      		<fa-icon icon="fa-question-circle"></fa-icon>
+      	</template>
+      	<p>It is important for you to read research, industry blogs and journals so that you can keep on top of the latest trends and information. You will be inquisitive about what’s going on in your industry to the point you will go to industry forums and fairs.</p>
+    </modal>
+    <modal :content="modals[2]">
+      	<template slot="button">
+      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+      		<fa-icon icon="fa-question-circle"></fa-icon>
+      	</template>
+      	<p>When things go wrong or not to plan investigate what happened so you can fix it.  However if things go right acknowledge the work you and your team have put into it to make that happen.</p>
+    </modal>
+</activity-box>

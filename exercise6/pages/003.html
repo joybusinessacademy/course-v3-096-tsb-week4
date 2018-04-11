@@ -1,0 +1,31 @@
+<activity-box>
+    <page-title-center :title=pageTitle></page-title-center>
+    <p>Below are some qualities of the inspired person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
+	<p><strong>This is me:</strong></p>
+    <switch-form :data="flipswitchData"></switch-form>
+    <modal :content="modals[0]">
+      	<template slot="button">
+      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+      		<fa-icon icon="fa-question-circle"></fa-icon>
+      	</template>
+      	<p>When you have a clear vivid picture of what you are wanting to achieve you will use the three words of language, picture and feelings.</p>
+      	<p>You will say to yourself WOW, that is exactly what I want (that’s language). You will see the colours, the look of it, the picture right in front of your eyes and that will lead to you creating the feelings that you want to have about your business.</p>
+      	<p>This is good for you, your team, your customers and your clients.  In short, VIVID is the WOW!</p>
+    </modal>
+    <modal :content="modals[1]">
+      	<template slot="button">
+      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+      		<fa-icon icon="fa-question-circle"></fa-icon>
+      	</template>
+      	<p>When you fail to plan then you plan to fail.  This is a situation you can learn from the Ten Laws for Success.  (Law 5: Preparation is Everything), (Law 3: You Will Get Back What You Put In).</p>
+      	<p>When you are inspired you will look anywhere at any time for an edge and this will keep you motivated and that edge could come from Law 4 which is Benchmark.  Find a benchmark, modify it and put your personality into it and be inspired enough to become a bench mark yourself.</p>
+    </modal>
+    <modal :content="modals[2]">
+      	<template slot="button">
+      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+      		<fa-icon icon="fa-question-circle"></fa-icon>
+      	</template>
+      	<p>Acknowledge your successes and achievements by writing them in a journal or in a success log. These could be tiny little successes or big huge successes – it is important to acknowledge every success, no matter how small or how large.</p>
+		<p>From these you will be motivated even more and it will be a great story to share when your business is a brilliant success.</p>
+    </modal>
+</activity-box>

@@ -1,0 +1,30 @@
+<activity-box>
+    <page-title-center :title=pageTitle></page-title-center>
+    <p>Below are some qualities of the trusting person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
+    <p><strong>This is me:</strong></p>
+    <switch-form :data="flipswitchData"></switch-form>
+    <modal :content="modals[0]">
+        <template slot="button">
+            <!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+            <fa-icon icon="fa-question-circle"></fa-icon>
+        </template>
+        <p>A business that has a high level of trust where clients and customers are happy to come is GOLD to a business owner or business leader. Your purpose in life is to create a High Level of Trust for your clients, your customers, your suppliers and your people.</p>
+    </modal>
+    <modal :content="modals[1]">
+        <template slot="button">
+            <!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+            <fa-icon icon="fa-question-circle"></fa-icon>
+        </template>
+        <p>If you are a leader of a business you need to have a high level of integrity. In fact integrity is the single biggest thing that your customers and clients want. It means that you will do what you say you will do. By doing that, you can look in the mirror and feel good about it every day.</p>
+    </modal>
+    <modal :content="modals[2]">
+        <template slot="button">
+            <!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
+            <fa-icon icon="fa-question-circle"></fa-icon>
+        </template>
+        <p>When you embrace the following three C’s, you are enhancing the trust that you have already created with your clients, customers and suppliers.</p>
+        <p>Concentration leads to focus and the more focussed you can be the more determined you will get.</p>
+        <p>Confidence comes from practice, practice, practice, practice. The more you practice, the better your confidence.</p>
+        <p>Composure is the state of being calm and in control of yourself.</p>
+    </modal>
+</activity-box>
