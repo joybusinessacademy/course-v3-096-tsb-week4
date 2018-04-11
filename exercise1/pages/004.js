@@ -1,35 +1,21 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'The Training Program',
-            image: '03.png',
-            alt: ' ',
+            pageTitle: 'The Great Eight',
+            saveData: {},
         }
     },
-    computed:{
-
+    methods: {},
+    events: {
+        'data-recieved': function (data) {
+            // Waits for componenets to send their data, and then adds it to the save data object on this page.
+            Vue.set(this.saveData, data.key, data.value);
+            // Sends to save data from this page to the view-embed file. There it looks for empty strings.
+            this.$parent.progressLocked(this.saveData);
+        }
     },
-    methods: {  
-
-    },
+    computed: {},
     ready: function() {
-      $("#para1").show();
-      var count = 1;
-      $("#nextPara").on("click",function(){
-            if (count == 8){
-                return
-            } else {
-                console.log(count)
-                $("#para"+count).fadeOut("fast",function(){
-                    count = count + 1;
-                    $("#para"+(count)).fadeIn("fast");
-                })
-                console.log(count)
-                if(count === 7){
-                    $("#nextPara").hide();
-                }
-                
-            } 
-      });
+        
     }
 }

@@ -1,10 +1,9 @@
-<activity-box>
-	<page-title-center :title="pageTitle"></page-title-center>
-	<p>Take a moment to reflect on week two. Write a short paragraph with two critical learnings from week two. Mark shared his learnings, explain what resonated with you and why.</p>
-    <textbox id="page006a"></textbox>
-       <template v-for="question in questions">
+<activity-box type="Results">
+    <page-title-center :title="pageTitle"></page-title-center>
+    <p>Below is your business performance ratings from week one. It is essential to keep these front of mind so that when you continue through the course, you are thinking about them. </p>
+	<p>Coach Mark wants you to improve in the areas that need some work, so take some time now to review them, reflect and then continue with week three.</p>
+	<template v-for="question in questions">
 		<p><{question.question}></p>		
 		<p><{question.answer}></p>
 	</template>
 </activity-box>
-

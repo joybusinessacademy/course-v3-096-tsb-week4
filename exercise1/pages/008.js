@@ -1,8 +1,8 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'Welcome to Week Four',
-            image: '1.png',
+            pageTitle: 'The Great Eight',
+            image: '5.png',
         }
     },
     methods: {   
