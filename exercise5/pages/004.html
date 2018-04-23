@@ -1,3 +1,11 @@
-<activity-box type="Task">
-	<minimal-form :questions-wrap=questionsWrap></minimal-form>
-</activity-box>
+<content-box two-column="true">
+    <template slot="left">
+        <image-block :alt="alt" :image=image :root=root></image-block>
+    </template>
+    <template slot="right">
+        <page-title :title="pageTitle"></page-title>
+        <p>With technology and accounting systems there is no excuse for not knowing your numbers. Whether your numbers are right or not, you need to know, so don’t put your head in the sand. </p>
+        <p>In New Zealand, we have a company called The Warehouse. It is a billion-dollar business, and at 5.00pm every night they know precisely where their numbers are. So if they can do that, any business can do that.
+        </p>
+    </template>
+</content-box>

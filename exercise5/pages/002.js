@@ -1,13 +1,21 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: '3. Thinking',
-            image: '01.png',
+            pageTitle: 'Know Your Numbers',
+            image: '1.png'
+
         }
+    },
+    computed: {
+
     },
     methods: {   
 
     },
+    events:{
+        
+    },
     ready: function() {
+       
     }
 }

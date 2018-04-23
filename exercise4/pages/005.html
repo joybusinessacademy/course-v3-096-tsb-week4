@@ -1,4 +1,11 @@
-
-    <break-title :course-id=course.id :exercise_id=exercise_id></break-title>
-
-
+<content-box two-column="true">
+    <template slot="left">
+        <image-block :alt="alt" :image=image :root=root></image-block>
+    </template>
+    <template slot="right">
+        <page-title :title="pageTitle"></page-title>
+        <p>Review your processes and systems to make sure they are delivering the perfect basics.</p>
+        <p>On the next pages, write about three systems/processes that you have identified have become too complicated. Then explain what you are going to do to bring them back to the basics.
+        </p>
+    </template>
+</content-box>

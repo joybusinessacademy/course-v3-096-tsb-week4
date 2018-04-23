@@ -1,3 +1,12 @@
-<activity-box type="Task">
-	<minimal-form :questions-wrap=questionsWrap></minimal-form>
-</activity-box>
+<content-box two-column="true">
+    <template slot="left">
+        <image-block :alt="alt" :image=image :root=root></image-block>
+    </template>
+    <template slot="right">
+        <page-title :title="pageTitle"></page-title>
+        <p>On the next few pages, you will outline your plan for personal development.</p>
+        <p>These are just the starting point, and the idea is for you read an article or watch a TED talk weekly and to catch up with someone fortnightly for coaching.</p>
+        <p>We have provided you with a plan for your first four sessions and catch ups.
+        </p>
+    </template>
+</content-box>

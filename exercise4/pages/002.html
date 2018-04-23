@@ -1,13 +1,10 @@
-<content-box>
-    <div class="col-xs-12 col-sm-6 v3-image-col">
+<content-box two-column="true">
+    <template slot="left">
         <image-block :alt="alt" :image=image :root=root></image-block>
-    </div>
-    <div class="col-xs-12 col-sm-6 v3-text-col">
+    </template>
+    <template slot="right">
         <page-title :title="pageTitle"></page-title>
-        <p>The trusting person is honest towards others and has integrity and honesty towards themselves. The trusting person creates a culture of trust. </p>
-        <p>They also trust themselves to deliver their skills and talents with composure..</p>
-        <!-- If you need to display the tutorial, set tutorial to true -->
-        <journal-button align="right" :tutorial="false"></journal-button>
-
-    </div>
+        <p>The third of Coach Mark's Great Eight is about sticking to the basics. To me, business excellence is doing the basics better than before all day, every day, in every way. </p>
+    </template>
 </content-box>
+

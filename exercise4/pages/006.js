@@ -1,7 +1,7 @@
 pageComponentry = {
     data: function() {
         return {
-          pageTitle: 'Coaching/Mentoring Catch Up One',
+          pageTitle: 'System/Process One',
           questionsWrap: {
             //small for input boxes, large for textareas
             size: 'large',
@@ -9,15 +9,15 @@ pageComponentry = {
               {
                 //must have unique id for each question
                id: 'q1',
-               label: 'Choose someone, and write their name and relationship to you. '
+               label: 'Explain what the system or process is.'
              },
               {
                id: 'q2',
-               label: 'Why have you chosen this person? You will use this reason as part of your approach.'
+               label: 'Analyse and then explain why it has become complicated.'
              },
               {
                id: 'q3',
-               label: 'Now contact this person and ask them to be your mentor. Provide a summary of your first catch up. What area of personal development will they help you with?'
+               label: 'Describe how you will bring it back to the basics.'
               }
             ]
           },

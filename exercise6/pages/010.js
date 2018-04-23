@@ -1,23 +1,23 @@
 pageComponentry = {
     data: function() {
         return {
-          pageTitle: 'Coaching/Mentoring Catch Up One',
+          pageTitle: 'Learning Hour Session Three',
           questionsWrap: {
             //small for input boxes, large for textareas
             size: 'large',
             questions: [
               {
                 //must have unique id for each question
-               id: 'q1',
-               label: 'Choose someone, and write their name and relationship to you. '
+               id: 'q16',
+               label: 'Provide the title of the article or TED talk you watched.'
              },
               {
-               id: 'q2',
-               label: 'Why have you chosen this person? You will use this reason as part of your approach.'
+               id: 'q17',
+               label: 'Explain the area of personal development this will help you with. '
              },
               {
-               id: 'q3',
-               label: 'Now contact this person and ask them to be your mentor. Provide a summary of your first catch up. What area of personal development will they help you with?'
+               id: 'q18',
+               label: 'Provide a summary of your learnings from the article/video and what you will change.'
               }
             ]
           },

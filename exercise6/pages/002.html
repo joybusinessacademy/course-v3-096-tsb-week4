@@ -1,11 +1,11 @@
-<content-box>
-    <div class="col-xs-12 col-sm-6 v3-image-col">
+<content-box two-column="true">
+    <template slot="left">
         <image-block :alt="alt" :image=image :root=root></image-block>
-    </div>
-    <div class="col-xs-12 col-sm-6 v3-text-col">
+    </template>
+    <template slot="right">
         <page-title :title="pageTitle"></page-title>
-        <p>The inspired person knows the big picture and sets goals that are vivid. They can see, hear, taste, smell and feel their vision. </p>
-        <p>The inspired person is self-motivated with a plan and a strategy to achieve. They recognised personal goals and acknowledge their successes and achievements regularly.</p>
-        <journal-button align="right" :tutorial="false"></journal-button>
-    </div>
+        <p>The fifth of Coach Mark's Great Eight is about your personal development. Your biggest asset is you. You are only as good as your mind provides.</p>
+        <p>Get coaching, mentoring and even meetings with people who are successful in your game. Create a learning hour where you read, watch and listen to experts and commentators on business and performance. Use Ted Talks, YouTube and read books. Grow yourself, and you grow your business.
+        </p>
+    </template>
 </content-box>
