@@ -1,27 +1,11 @@
-<activity-box >
-    <page-title-center :title="pageTitle"></page-title-center>
-    <p>Coach Mark learned several years later that when you associate every letter in the word ATTITUDE with its corresponding number in the alphabet – well, you add it up below and see what the score is.</p>
-    <textbox id="page003" label="A(1) + T(20) + T(20) + I(9) + T(20) + U(21) + D(4) +  E(5) = ???"></textbox>
-    <div class="row" v-show="feedback.show">
-      <div class="v3-feedback" v-bind:class="{'v3-error':!feedback.correct,'v3-correct':feedback.correct}" v-if="feedback.show">
-          <div class="icon-side">
-              <span class="fa " v-bind:class="{'fa-times':!feedback.correct,'fa-check':feedback.correct}"></span>
-          </div>
-          <div class="v3-feedback-text">
-              <p><{feedback.text}></p>
-              <button v-if="!feedback.correct" @click="feedback.show = false" aria-label="try again" class="submit-next">
-                  <span class="fa fa-undo" aria-hidden="true"></span>
-              </button>
-          </div>
-      </div>
+<content-box>
+    <div class="col-xs-12 col-sm-6 v3-image-col">
+        <image-block :alt="alt" :image=image :root=root></image-block>
     </div>
-    <br>
-    <div class="button-row" v-show="!feedback.show">
-   		<button @click="submitCorrect()" class="v3-submit-button">Submit</button>
-   	</div>
-	<div v-show="feedback.correct === true">
-	<p>This number is a milestone in so many ways, whether it be in sport, business and life. Put a % after it, and this is what successful people give to whatever they are doing.</p>
-	<p>In life, there is always one thing we can change without consideration for anything or anyone. We can change our attitude. It just comes down to what type of attitude we change it to.</p>
-	</div>
-  
-</activity-box>
+    <div class="col-xs-12 col-sm-6 v3-text-col">
+        <page-title :title=pageTitle></page-title>
+        <p>Here is a simple analogy for you – when you want to buy a new car, and you know what you want, you start to see plenty of those cars on the road. They were always there, but now you see them because you are switched on.
+
+        </p>
+    </div>
+</content-box>

@@ -2,7 +2,7 @@ pageComponentry = {
     data: function() {
         return {
             pageTitle: 'Value Yourself Up',
-            image: '3.png'
+            image: '5.png'
 
         }
     },

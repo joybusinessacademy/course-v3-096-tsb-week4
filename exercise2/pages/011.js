@@ -1,8 +1,8 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'Switch On',
-            image: '1.png',
+            pageTitle: 'Stay Switched On',
+            image: '6.png',
             alt: ' ',
         }
     },

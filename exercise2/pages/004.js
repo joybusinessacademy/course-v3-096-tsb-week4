@@ -1,8 +1,8 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'Attitude time!',
-            image: '2.png',
+            pageTitle: 'Switch On',
+            image: '3.png',
             alt: ' ',
         }
     },

@@ -1,27 +1,9 @@
-<activity-box>
-    <page-title-center :title=pageTitle></page-title-center>
-    <p>Below are some qualities of the astute person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
-	<p><strong>This is me:</strong></p>
-    <switch-form :data="flipswitchData"></switch-form>
-    <modal :content="modals[0]">
-      	<template slot="button">
-      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-      		<fa-icon icon="fa-question-circle"></fa-icon>
-      	</template>
-      	<p>You are developing yourself, you are going forward, you are achieving more. You are being proactive about doing this.</p>
-    </modal>
-    <modal :content="modals[1]">
-      	<template slot="button">
-      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-      		<fa-icon icon="fa-question-circle"></fa-icon>
-      	</template>
-      	<p>Tune your brain into recognising opportunities that can help you advance yourself in the future. You do this by writing opportunities that you recognise into an ‘opportunities list’ for you to follow up at your leisure.</p>
-    </modal>
-    <modal :content="modals[2]">
-      	<template slot="button">
-      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-      		<fa-icon icon="fa-question-circle"></fa-icon>
-      	</template>
-      	<p>When you come across information that you like and think will be valuable to you going forward with your business then write or cut and paste into a folder.  It is always good to review potential opportunities by storing information.</p>
-    </modal>
-</activity-box>
+<content-box two-column="true">
+    <template slot="left">
+        <image-block :alt="alt" :image=image :root=root></image-block>
+    </template>
+    <template slot="right">
+        <page-title :title="pageTitle"></page-title>
+        <p>You need to leverage what you know to give you an advantage in the marketplace.  What you know enhances your credibility: when you truly value yourself up with confidence and self-belief, you increase your credibility power. It is your credibility power that will grow your business.</p>
+    </template>
+</content-box>

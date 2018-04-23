@@ -1,8 +1,8 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'Switch On',
-            image: '1.png',
+            pageTitle: 'Mark’s exercise',
+            image: '5.png',
             alt: ' ',
         }
     },
@@ -15,4 +15,4 @@ pageComponentry = {
     ready: function() {
       
     }
-}
+} 
