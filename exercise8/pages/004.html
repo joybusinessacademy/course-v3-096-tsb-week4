@@ -1,16 +1,11 @@
-<activity-box type=Activity rotating="true">
-    <page-title-center :title=pageTitle></page-title-center>
-    <ab-slide slide-index="0">
-    	<horizontal-slider-increments :component-data=componentData1></horizontal-slider-increments>
-    	<textbox id="004a" label="Why?" placeholder=""></textbox>
-    	<ab-slide-change count="1"></ab-slide-change>
-    </ab-slide>
-	<ab-slide slide-index="1">
-		<horizontal-slider-increments :component-data=componentData2></horizontal-slider-increments>
-		<textbox id="004b" label="Why?" placeholder=""></textbox>
-		<ab-slide-change count="1"></ab-slide-change>
-	</ab-slide>
-	<ab-slide slide-index="2">
-		<p>Great, thank you for submitting your answers for this set of questions. You can now move on to the next page.</p><next-page-button>Next</next-page-button>
-	</ab-slide>
-</activity-box>
+<content-box two-column="true">
+    <template slot="left">
+        <image-block :alt="alt" :image=image :root=root></image-block>
+    </template>
+    <template slot="right">
+        <page-title :title="pageTitle"></page-title>
+        <p>If you need motivating to look after your wellbeing, then watch your children sleep, share a sunset with the one you love, visit your mother – she does not want you to die before she does.</p>
+        <p>You should also consider the benefits of wellbeing. You will enjoy your work more, cope better with the pressures that come with the job, live longer and maximise your life. It’s a no-brainer really. As Spock always said, “Live long and prosper.”
+        </p>
+    </template>
+</content-box>

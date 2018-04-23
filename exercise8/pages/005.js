@@ -1,13 +1,21 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'Mark’s advice',
-            image: '04.png',
+            pageTitle: 'Health and Fitness',
+            image: ''
+
         }
+    },
+    computed: {
+
     },
     methods: {   
 
     },
+    events:{
+        
+    },
     ready: function() {
+       
     }
 }

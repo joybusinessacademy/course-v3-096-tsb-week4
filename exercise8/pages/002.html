@@ -1,11 +1,11 @@
-<content-box>
-    <div class="col-xs-12 col-sm-6 v3-image-col">
+<content-box two-column="true">
+    <template slot="left">
         <image-block :alt="alt" :image=image :root=root></image-block>
-    </div>
-    <div class="col-xs-12 col-sm-6 v3-text-col">
+    </template>
+    <template slot="right">
         <page-title :title="pageTitle"></page-title>
-        <p>The universal person is open to ideas and new ways of achieving. They are innovative and creative. </p>
-        <p>The universal person utilises all experiences as learning experiences. They are tolerant of change and promote positive change. </p>
-        <journal-button align="right" :tutorial="false"></journal-button>
-    </div>
+        <p>The seventh of Coach Mark's Great Eight is about looking after your health and fitness. High performers don’t have a choice when it comes to health and fitness. </p>
+        <p>You must maintain a work/life balance, a reasonable level of fitness, and energise yourself with quality nutrition. This is self-explanatory: a healthy mind needs a healthy body.
+        </p>
+    </template>
 </content-box>

@@ -1,13 +1,21 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: '6. Universal ',
-            image: '01.png',
+            pageTitle: 'Health and Fitness',
+            image: '1.png'
+
         }
+    },
+    computed: {
+
     },
     methods: {   
 
     },
+    events:{
+        
+    },
     ready: function() {
+       
     }
 }

@@ -1,31 +1,6 @@
-<activity-box>
-    <page-title-center :title=pageTitle></page-title-center>
-    <p>Below are some qualities of the universal person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
-<p><strong>This is me:</strong></p>
-    <switch-form :data="flipswitchData"></switch-form>
-    <modal :content="modals[0]">
-      	<template slot="button">
-      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-      		<fa-icon icon="fa-question-circle"></fa-icon>
-      	</template>
-      	<p>Adaptability is something that you should take seriously. As markets change, technology is developed and new trend come into business very quickly you need to make sure you are up with the play and make sure you can adapt quickly.</p>
-    </modal>
-    <modal :content="modals[1]">
-      	<template slot="button">
-      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-      		<fa-icon icon="fa-question-circle"></fa-icon>
-      	</template>
-      	<p>Throughout your career you will have had moments where you have been very creative and through that time you will have learnt to switched on to new ways of doing business, managing people and using tools and systems like you are using right now.</p>
-		<p>Don’t be afraid to embrace change with its innovation towards the future. The best thing you can do is go with it and see what you can do with it in terms of your business.</p>
-    </modal>
-    <modal :content="modals[2]">
-      	<template slot="button">
-      		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-      		<fa-icon icon="fa-question-circle"></fa-icon>
-      	</template>
-      	<p>If you don’t move with the times you will be left behind. One thing we all need to know in business is that change can happen quickly.</p>
-		<p>When you look at how fast the world has become connected through the internet you will have learnt how fast things have changed. It is your duty to keep a reasonable eye on what is happening.</p>
-		<p>The planet is truly universal where in my business I can have meetings in 3 cities and 2 countries around the world in one day using the internet.</p>
-		<p>It’s simple, if you don’t keep up you will be left behind.</p>
-    </modal>
+<activity-box type="Activity">
+		<page-title :centered="true" :title="pageTitle"></page-title>
+    <p>Stress and poor time-management is your worst enemy – they can even kill you.  Agree with yourself to take care of your body and mind by resting correctly, eating properly and doing some physical activity every week without your cell phone.
+    </p>
+    <textbox id="pg003" label="How well do you currently look after yourself? Be honest with yourself?  The truth is the best approach for acknowledging that change is needed." placeholder=""></textbox>
 </activity-box>

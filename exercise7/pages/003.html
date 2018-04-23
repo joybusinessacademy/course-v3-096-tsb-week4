@@ -1,30 +1,6 @@
-<activity-box>
-    <page-title-center :title=pageTitle></page-title-center>
-    <p>Below are some qualities of the tenacious person. Have a think about how you rate yourself with these qualities. Click question mark for explanation.</p>
-<p><strong>This is me:</strong></p>
-    <switch-form :data="flipswitchData"></switch-form>
-        <modal :content="modals[0]">
-          	<template slot="button">
-          		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-          		<fa-icon icon="fa-question-circle"></fa-icon>
-          	</template>
-          	<p>Tenacious means be consistent but make sure you don’t burn yourself out.</p>
-          	<p>Law 1: You control your own destiny and Law 7: Make it human.</p>
-          	<p>Remember you are not Superman or Wonder Woman; you are a business person who needs to take care of yourself and your family while consistently moving forward to achieve your goal.</p>
-        </modal>
-        <modal :content="modals[1]">
-          	<template slot="button">
-          		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-          		<fa-icon icon="fa-question-circle"></fa-icon>
-          	</template>
-          	<p>It is so common to hear stories of people who have given up just before everything starts to go great. You don’t want to be one of those stories.</p>
-          	<p>You want to be the story of success that pushes through all the tough times.</p>
-        </modal>
-        <modal :content="modals[2]">
-          	<template slot="button">
-          		<!-- <image-block :alt="alt" :image=image :root=root></image-block> -->
-          		<fa-icon icon="fa-question-circle"></fa-icon>
-          	</template>
-          	<p>As a leader in your business you should show your team that you follow professional habits and encourage them to do the same. Professional habits will be noticed by your customers and clients.</p>
-        </modal>
+<activity-box type="Activity">
+		<page-title :centered="true" :title="pageTitle"></page-title>
+    <p>It takes discipline to stay on task and keep your eye on the ball.  Every day ask yourself the question, “If I do this, will it grow my business?”
+    </p>
+    <textbox id="pg003" label="How would you rate your current abilities to stay on task? Explain the areas you do well in and areas for improvement." placeholder=""></textbox>
 </activity-box>

@@ -1,8 +1,8 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: '7. Dynamic',
-            image: '01.png',
+            pageTitle: 'Expect to succeed',
+            image: '1.png',
         }
     },
     methods: {   

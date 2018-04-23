@@ -10,7 +10,7 @@ pageComponentry = {
                 text: 'Made notes in your training diary'
               },
               {
-                text: 'Have a good understanding of week three'
+                text: 'Have a good understanding of week four'
               }
             ]
 

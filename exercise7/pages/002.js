@@ -1,13 +1,21 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: '5. Tenacious',
-            image: '01.png',
+            pageTitle: 'Stay on Task',
+            image: '1.png'
+
         }
+    },
+    computed: {
+
     },
     methods: {   
 
     },
+    events:{
+        
+    },
     ready: function() {
+       
     }
 }

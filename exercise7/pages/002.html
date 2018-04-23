@@ -1,11 +1,10 @@
-<content-box>
-    <div class="col-xs-12 col-sm-6 v3-image-col">
+<content-box two-column="true">
+    <template slot="left">
         <image-block :alt="alt" :image=image :root=root></image-block>
-    </div>
-    <div class="col-xs-12 col-sm-6 v3-text-col">
+    </template>
+    <template slot="right">
         <page-title :title="pageTitle"></page-title>
-        <p>The tenacious person works hard and thoroughly – they will never, never, never, give up. </p>
-        <p>The tenacious person has positive proactive habits. They take notes, measure progress by staying ‘in the now’ and keeping one eye on the next step forward.</p>
-        <journal-button align="right" :tutorial="false"></journal-button>
-    </div>
+        <p>The sixth of Coach Mark's Great Eight is about staying on task. Stick to your game plan – know where you are going and measure your progress against your plan.  It is easy to get distracted away from your primary goal when you don’t have a plan. 
+        </p>
+    </template>
 </content-box>
