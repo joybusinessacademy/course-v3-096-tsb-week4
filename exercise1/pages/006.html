@@ -2,8 +2,26 @@
     <page-title-center :title="pageTitle"></page-title-center>
     <p>Below is your business performance ratings from week one. It is essential to keep these front of mind so that when you continue through the course, you are thinking about them. </p>
 	<p>Coach Mark wants you to improve in the areas that need some work, so take some time now to review them, reflect and then continue with week three.</p>
-	<template v-for="question in questions">
-		<p><{question.question}></p>		
-		<p><{question.answer}></p>
-	</template>
+	 <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"><strong>Question</strong></th>
+                <th scope="col"><strong>Rating</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="question in questions">
+                <th scope="row">
+                    <p>
+                        <{question.question}>
+                    </p>
+                </th>
+                <td>
+                    <p>
+                        <{question.answer}>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </activity-box>
