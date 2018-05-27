@@ -1,7 +1,7 @@
 pageComponentry = {
     data: function() {
         return {
-            pageTitle: 'Move Forward with the Basics',
+            pageTitle: 'Move Forward with your Personal Development',
             image: '4.png',
             alt: ' ',
         }

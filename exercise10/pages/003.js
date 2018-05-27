@@ -7,7 +7,7 @@ pageComponentry = {
                 text: 'Completed all input fields'
               },
               {
-                text: 'Made notes in your training diary'
+                text: 'Made notes in your Journal'
               },
               {
                 text: 'Have a good understanding of week four'

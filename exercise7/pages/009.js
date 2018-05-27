@@ -13,11 +13,11 @@ pageComponentry = {
              },
               {
                id: 'q8',
-               label: 'If I do this will it grow our business? Copy employee response here.'
+               label: 'If you do this ________ activity will it grow our business? Copy employee response here.'
              },
               {
                id: 'q9',
-               label: ' Is what I am doing a return on investment activity or a distraction? Copy employee response here.'
+               label: 'Is what you are doing on this ________. activity a return on investment activity or a distraction? Copy employee response here.'
               }
             ]
           },

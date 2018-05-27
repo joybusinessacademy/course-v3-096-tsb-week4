@@ -9,7 +9,7 @@ pageComponentry = {
               {
                 //must have unique id for each question
                id: 'q4',
-               label: 'EExplain what the system or process is.'
+               label: 'Explain what the system or process is.'
              },
               {
                id: 'q5',
