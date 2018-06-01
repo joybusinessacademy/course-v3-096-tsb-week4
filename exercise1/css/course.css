@@ -16,6 +16,10 @@
 		padding: 78px 30px 25px 40px;
 	}
 }
+.progress-bar {
+	background-color: #56BABE;
+}
+
 /*
 @media (max-width: 991px) {
 	.v3-journal{
