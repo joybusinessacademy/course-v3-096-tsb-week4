@@ -2,7 +2,7 @@ pageComponentry = {
     data: function() {
         return {
             pageTitle: 'Health and Fitness',
-            image: ''
+            image: '5.png'
 
         }
     },
