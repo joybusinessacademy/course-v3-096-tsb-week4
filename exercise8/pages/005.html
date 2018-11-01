@@ -1,4 +1,4 @@
-<content-box two-column="true">
+<content-box v-if="!activePdf" two-column="true">
     <template slot="left">
         <image-block :alt="alt" :image=image :root=root></image-block>
     </template>
@@ -8,13 +8,33 @@
             Coach Mark wants to help you in your quest to better health and wellbeing and has provided you with access to valuable resources he has pulled together from his many years of experience.
         </p>
         <p>
-            One is <a :href="root+'/images/pdf/walk.pdf'" target="_blank">a guide to walking</a>, and how to approach this exercise, so you see it as manageable and enjoyable.
+            One is <a @click="showPdf('walk')" target="_blank">a guide to walking</a>, and how to approach this exercise, so you see it as manageable and enjoyable.
         </p>
         <p>
-            The second is a guide to <a :href="root+'/images/pdf/sleep.pdf'" target="_blank">12 ways to improve sleep</a>.
+            The second is a guide to <a @click="showPdf('sleep')" target="_blank">12 ways to improve sleep</a>.
         </p>
         <p>
             These are both excellent resources that will complement your preparation for the Wellbeing Plan you have in this module.
         </p>
     </template>
+</content-box>
+<content-box v-if="activePdf">
+    <div>
+        <div class="close-pdf" @click="showPdf(false)">
+            <p>close</p>
+            <span class="fa fa-times">
+        </div>
+        <object v-if="activePdf==='walk'"
+        width="700" height="600"
+        type="application/pdf"
+        :data="root+'/images/pdf/walk.pdf'">
+            <p>Oh no! the walk PDF didnt load</p>
+        </object>
+        <object v-if="activePdf==='sleep'"
+        width="700" height="600"
+        type="application/pdf"
+        :data="root+'/images/pdf/sleep.pdf'">
+            <p>Oh no! the sleep PDF didnt load</p>
+        </object>
+    </div>
 </content-box>
