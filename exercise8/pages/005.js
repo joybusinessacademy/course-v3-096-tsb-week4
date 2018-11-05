@@ -5,6 +5,7 @@ pageComponentry = {
             image: '5.png',
             activePdf: false,
             modalProps: {
+                hideButton: true,
                 title: '',
                 id: 'PDF-MODAL',
                 imageModal: false,
@@ -13,7 +14,6 @@ pageComponentry = {
         }
     },
     computed: {
-
     },
     methods: {   
         showPdf: function (pdfType) {
