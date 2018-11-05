@@ -3,7 +3,13 @@ pageComponentry = {
         return {
             pageTitle: 'Health and Fitness',
             image: '5.png',
-            activePdf: false
+            activePdf: false,
+            modalProps: {
+                title: '',
+                id: 'PDF-MODAL',
+                imageModal: false,
+                imageButton: false
+            }
         }
     },
     computed: {
