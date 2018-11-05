@@ -8,33 +8,42 @@
             Coach Mark wants to help you in your quest to better health and wellbeing and has provided you with access to valuable resources he has pulled together from his many years of experience.
         </p>
         <p>
-            One is <a @click="showPdf('walk')" target="_blank">a guide to walking</a>, and how to approach this exercise, so you see it as manageable and enjoyable.
+            One is <a @click="showPdf('Walk')" target="_blank">a guide to walking</a>, and how to approach this exercise, so you see it as manageable and enjoyable.
         </p>
         <p>
-            The second is a guide to <a @click="showPdf('sleep')" target="_blank">12 ways to improve sleep</a>.
+            The second is a guide to <a @click="showPdf('Sleep')" target="_blank">12 ways to improve sleep</a>.
         </p>
         <p>
             These are both excellent resources that will complement your preparation for the Wellbeing Plan you have in this module.
         </p>
     </template>
 </content-box>
-<content-box v-if="activePdf">
-    <div>
-        <div class="close-pdf" @click="showPdf(false)">
-            <p>close</p>
-            <span class="fa fa-times">
+<div v-if="activePdf" class="row v3">
+    <div class ="col-xs-12 col-md-10 col-lg-8 col-sm-10 v3-contentBox v3-transition-center"
+    style='align-self:flex-start;'>
+        <div class="pdf-header">
+            <h3 class="pdf-title"><{activePdf}> for Energy and Health</h3>
+            <div class="close-pdf" @click="showPdf(false)">
+                <p>close</p>
+                <span class="fa fa-times">
+            </div>
         </div>
-        <object v-if="activePdf==='walk'"
-        width="700" height="600"
-        type="application/pdf"
-        :data="root+'/images/pdf/walk.pdf'">
-            <p>Oh no! the walk PDF didnt load</p>
-        </object>
-        <object v-if="activePdf==='sleep'"
-        width="700" height="600"
-        type="application/pdf"
-        :data="root+'/images/pdf/sleep.pdf'">
-            <p>Oh no! the sleep PDF didnt load</p>
-        </object>
+        <div class="box">
+            <object v-if="activePdf==='Walk'"
+            class="pdf-container box"
+            align="middle"
+            type="application/pdf"
+            :data="root+'/images/pdf/walk.pdf'">
+                <p>Oh no! the walk PDF didnt load</p>
+            </object>
+            <object v-if="activePdf==='Sleep'"
+            class="pdf-container box"
+            align="middle"
+            type="application/pdf"
+            :data="root+'/images/pdf/sleep.pdf'">
+                <p>Oh no! the sleep PDF didnt load</p>
+            </object>
+        </div>
     </div>
-</content-box>
+</div>
+

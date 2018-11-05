@@ -26,3 +26,25 @@
 	background-color: #d51a68;
 	color: #fff;
 }
+.pdf-header {
+	display: flex;
+	width: 100%;
+}
+.pdf-title {
+	align-self: center;
+}
+
+.box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: 5rem;
+}
+.pdf-container {
+	margin-top: 0;
+	position: relative;
+	height: 700px;
+	width: 100%;
+}
