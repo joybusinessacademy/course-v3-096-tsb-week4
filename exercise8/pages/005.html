@@ -1,4 +1,4 @@
-<content-box v-if="!activePdf" two-column="true">
+<content-box two-column="true">
     <template slot="left">
         <image-block :alt="alt" :image=image :root=root></image-block>
     </template>
@@ -8,25 +8,20 @@
             Coach Mark wants to help you in your quest to better health and wellbeing and has provided you with access to valuable resources he has pulled together from his many years of experience.
         </p>
         <p>
-            One is <a @click="showPdf('Walk')" target="_blank">a guide to walking</a>, and how to approach this exercise, so you see it as manageable and enjoyable.
+            One is <a data-toggle="modal" data-target="#PDF-MODAL" @click="showPdf('Walk')" target="_blank">a guide to walking</a>, and how to approach this exercise, so you see it as manageable and enjoyable.
         </p>
         <p>
-            The second is a guide to <a @click="showPdf('Sleep')" target="_blank">12 ways to improve sleep</a>.
+            The second is a guide to <a data-toggle="modal" data-target="#PDF-MODAL" @click="showPdf('Sleep')" target="_blank">12 ways to improve sleep</a>.
         </p>
         <p>
             These are both excellent resources that will complement your preparation for the Wellbeing Plan you have in this module.
         </p>
     </template>
 </content-box>
-<div v-if="activePdf" class="row v3">
-    <div class ="col-xs-12 col-md-10 col-lg-8 col-sm-10 v3-contentBox v3-transition-center"
-    style='align-self:flex-start;'>
+<modal :content="modalProps">
+    <div class ="col-xs-12 col-md-10 col-lg-8 col-sm-10 v3-contentBox v3-transition-center custom-modal-container">
         <div class="pdf-header">
             <h3 class="pdf-title"><{activePdf}> for Energy and Health</h3>
-            <div class="close-pdf" @click="showPdf(false)">
-                <p>close</p>
-                <span class="fa fa-times">
-            </div>
         </div>
         <div class="box">
             <object v-if="activePdf==='Walk'"
@@ -45,5 +40,4 @@
             </object>
         </div>
     </div>
-</div>
-
+</modal>

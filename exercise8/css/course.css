@@ -3,29 +3,6 @@
 }
 
 /* close pdf button */
-.close-pdf {
-	padding: 0.5rem;
-	color: #d51a68;
-	border: solid 1px #d51a68;
-	border-radius: 500px;
-	display: flex;
-	flex-direction: row;
-	width: fit-content;
-	margin: 1rem 0 1rem auto;
-	cursor: pointer;
-}
-.close-pdf > span {
-	margin: auto 3px;	
-}
-.close-pdf > p {
-	margin: auto;
-}
-.close-pdf:hover {
-	border: solid 1px #d51a68;
-	border-radius: 500px;
-	background-color: #d51a68;
-	color: #fff;
-}
 .pdf-header {
 	display: flex;
 	width: 100%;
@@ -34,6 +11,7 @@
 	align-self: center;
 }
 
+/* view pdf nicely in <object> tag */
 .box {
 	position: absolute;
 	top: 0;
@@ -48,3 +26,16 @@
 	height: 700px;
 	width: 100%;
 }
+.custom-modal-container {
+	align-self: flex-start;
+	width:100%;
+	margin-top: -15rem;
+	padding-left: 0;
+}
+
+@media screen and (max-width:767px) {
+	.custom-modal-container {
+		margin-top: auto;
+	}
+}
+
